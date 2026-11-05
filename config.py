@@ -16,8 +16,8 @@ AUTOR_PADRAO = "Adryan de Alencar"
 # A primeira é a padrão: matéria sem "secao" no frontmatter cai nela
 # (e continua em noticias/..., então nenhum link antigo muda).
 SECOES = [
-    {"slug": "noticias", "nome": "Notícias"},
-    {"slug": "arte-e-cultura", "nome": "Arte e Cultura"},
+       {"slug": "ensaios", "nome": "Ensaios"},
+       {"slug": "arte-e-cultura", "nome": "Arte e Cultura"},
 ]
 
 FONTE_BOLD = STATIC / "fonts/ZTNature-Black.ttf"
@@ -29,12 +29,5 @@ LINKS = [
     {"titulo": "Lattes", "url": "http://lattes.cnpq.br/3380250362638685", "desc": "Currículo Lattes"},
 ]
 
-# Matérias que já circulavam com o endereço antigo (noticias/<slug>.html).
-# O build deixa uma página-ponte só para estes slugs. Matérias novas não entram aqui.
-REDIRECIONAR_ANTIGOS = [
-    "a-relacao-da-filosofia-estetica-com-o-fingidor-de-samir-yazbek",
-    "o-fingidor-de-samir-yazbek",
-    "primeiro-turno-eleicoes-2026",
-    "uma-reflexao-sobre-etnografia",
-    "hegemonia-fora-do-senso-comum-um-estudo-gramsciano",
-]
+# Build de página-ponte só para links trocados.
+REDIRECIONAR_ANTIGOS = []

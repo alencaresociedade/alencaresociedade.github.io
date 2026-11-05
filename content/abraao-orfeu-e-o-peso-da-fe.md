@@ -1,7 +1,7 @@
 ---
 titulo: "Abraão, Orfeu e o Peso da Fé"
-secao: "Arte e Cultura"
-categoria: "Ensaios"
+secao: "Ensaios"
+categoria: "Filosofia"
 idioma: "PT"
 palavras_chave: ["Kierkegaard", "Temor e Tremor", "Abraão", "Orfeu", "fé", "confiança", "mitologia"]
 data: 2026-10-28

@@ -1,6 +1,7 @@
 ---
 titulo: "Uma reflexão sobre etnografia"
-categoria: "Ensaios"
+secao: "Ensaios"
+categoria: "Ciências Sociais"
 idioma: "PT"
 palavras_chave: ["etnografia", "métodos", "antropologia", "ciências sociais", ]
 data: 2026-09-28

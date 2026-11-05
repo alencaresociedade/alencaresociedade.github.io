@@ -1,5 +1,6 @@
 ---
 titulo: "Hegemonia fora do senso comum, um estudo gramsciano"
+secao: "Ensaios"
 categoria: "Teoria Política"
 idioma: "PT"
 palavras_chave: ["antonio gramsci", "gramsci", "teoria política", "filosofia política", "hegemonia"]

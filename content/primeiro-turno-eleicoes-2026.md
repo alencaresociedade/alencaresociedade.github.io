@@ -1,5 +1,6 @@
 ---
 titulo: "Primeiro turno das eleições de 2026, o que isso reflete sobre a democracia no Brasil?"
+secao: "Ensaios"
 categoria: "Teoria Política"
 idioma: "PT"
 palavras_chave: ["liberdade negativa", "Bolsonaro", "teoria política", "Lula", "eleições"]
