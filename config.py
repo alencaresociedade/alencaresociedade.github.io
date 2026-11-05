@@ -1,14 +1,13 @@
-"""Configurações e caminhos do site. Tudo que muda de um site pra outro fica aqui."""
 from pathlib import Path
 
 RAIZ = Path(__file__).parent
 CONTEUDO = RAIZ / "content"
 TEMPLATES = RAIZ / "templates"
 STATIC = RAIZ / "static"
-SAIDA = RAIZ / "docs"  # pasta de saída: o GitHub Pages publica a partir de /docs
-DADOS = RAIZ / "data"  # estado que não faz parte do site (ex.: posts já feitos no Bluesky)
+SAIDA = RAIZ / "docs"
+DADOS = RAIZ / "data"
 
-SITE_URL = "https://peanutcandybutwithmeat.github.io/Alencar-Sociedade"
+SITE_URL = "https://alencaresociedade.github.io"
 NOME_SITE = "Alencar e Sociedade"
 AUTOR_PADRAO = "Adryan de Alencar"
 
