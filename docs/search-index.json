@@ -1,5 +1,22 @@
 [
   {
+    "titulo": "Democracia e Palavra: uma resenha",
+    "categoria": "Teoria Política",
+    "idioma": "PT",
+    "palavras_chave": [
+      "linguagem",
+      "democracia",
+      "sofistas",
+      "Chantal Mouffe",
+      "Hannah Arendt",
+      "neoliberalismo"
+    ],
+    "resumo": "Uma leitura crítica de Democracia e Palavra, com questionamentos sobre a relação entre palavra, linguagem e ação política",
+    "autor": "Adryan de Alencar",
+    "secao": "Resenhas",
+    "url": "resenhas/teoria-politica/pt/democracia-e-palavra-uma-resenha.html"
+  },
+  {
     "titulo": "Abraão, Orfeu e o Peso da Fé",
     "categoria": "Filosofia",
     "idioma": "PT",
