@@ -11,7 +11,7 @@ resumo: "Uma leitura crítica de Democracia e Palavra, com questionamentos sobre
 destaque: true
 ---
 
-Eu estava lendo o livro *Democracia e Palavra*, organizado por professores e pesquisadores da UFRJ, que encontrei na estante de doação do IFCS (Instituto de Filosofia e Ciências Sociais). Não pude deixar de notar que a temática que mais me engaja é a linguagem, e não poderia deixar de ler um texto que, pela capa, articularia aspectos políticos e a palavra, uma das esferas que compõem a linguagem.
+Eu estava lendo o livro *Democracia e Palavra*, organizado por professores e pesquisadores da UFRJ, que encontrei na estante de doação do IFCS (Instituto de Filosofia e Ciências Sociais). Não pude deixar de notar pois, afinal, a temática que mais me engaja é a linguagem, e eu não poderia deixar de ler um texto que, pela capa, articularia aspectos políticos e a palavra, uma das esferas que compõem a linguagem.
 
 Li inicialmente a introdução, de Beatriz Porcel, e o primeiro capítulo, de Luiz Otávio Mantovaneli. Tenho algumas críticas a esse momento do texto. Senti que a escolha dos conceitos de Hannah Arendt sobre o espaço público, na página 12, limitou muito o potencial de definir e articular a relação entre as palavras e a vida política. A síntese foi extremamente rápida: "Em termos arendtianos, quando a linguagem está em jogo, o problema se torna político, porque a linguagem faz do ser humano um animal político."
 
