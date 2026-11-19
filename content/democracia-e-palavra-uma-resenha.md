@@ -7,7 +7,7 @@ palavras_chave: ["linguagem", "democracia", "sofistas", "Chantal Mouffe", "Hanna
 data: 2026-11-19
 autor: "Adryan de Alencar"
 tempo_leitura: "7 min de leitura"
-resumo: "Uma leitura crítica de Democracia e Palavra, com questionamentos sobre a relação entre palavra, linguagem e ação política"
+resumo: "Uma leitura crítica de Democracia e Palavra, com questionamentos sobre a relação entre palavra, linguagem e ação política."
 destaque: true
 ---
 
