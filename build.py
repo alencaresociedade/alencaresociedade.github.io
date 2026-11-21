@@ -19,6 +19,12 @@ from src.search_index import gerar_indice_busca
 from src.sitemap import gerar_sitemap
 
 
+DESCRICAO_PADRAO = ("Ensaios, crítica cultural e poesia sobre sociedade, política, ciência e mente. "
+                    "Um espaço de pensamento crítico entre diferentes áreas do saber.")
+DESCRICAO_SOBRE = ("Quem é Adryan de Alencar e o que é o Alencar e Sociedade: ensaios sobre "
+                   "política, sociedade e cotidiano, em português e inglês.")
+
+
 def titulo_pagina(nome=None):
     return f"{nome} — {config.NOME_SITE}" if nome else config.NOME_SITE
 
@@ -28,17 +34,27 @@ def preparar_saida():
     shutil.copytree(config.STATIC, config.SAIDA)
 
 
+def resumir(texto, limite=155):
+    if not texto or len(texto) <= limite:
+        return texto or ""
+    corte = texto[:limite].rsplit(" ", 1)[0]
+    return corte.rstrip(",;:.") + "…"
+
+
 def gerar_paginas_fixas(materias):
     og_home = f"{config.SITE_URL}/img/og/home.jpg"  # criar à mão em static/img/og/home.jpg
     destaque = next((m for m in materias if m["destaque"]), materias[0] if materias else None)
 
     render("index.html", config.SAIDA / "index.html", title=titulo_pagina(), base_path="",
            destaque=destaque, materias=[m for m in materias if m is not destaque],
+           descricao_meta=DESCRICAO_PADRAO,
            og_image=og_home, og_url=f"{config.SITE_URL}/")
     render("sobre.html", config.SAIDA / "sobre.html", title=titulo_pagina("Sobre"), base_path="",
+           descricao_meta=DESCRICAO_SOBRE,
            og_image=og_home, og_url=f"{config.SITE_URL}/sobre.html")
     render("links.html", config.SAIDA / "links.html", title=titulo_pagina("Links"), base_path="",
-           links=config.LINKS, og_image=og_home, og_url=f"{config.SITE_URL}/links.html")
+           links=config.LINKS, descricao_meta=DESCRICAO_PADRAO,
+           og_image=og_home, og_url=f"{config.SITE_URL}/links.html")
 
 
 def gerar_materia(m):
@@ -55,6 +71,7 @@ def gerar_materia(m):
     destino.parent.mkdir(parents=True, exist_ok=True)
     render("article.html", destino,
            **m, title=titulo_pagina(m["titulo"]),
+           descricao_meta=m.get("descricao") or resumir(m["resumo"]),
            html_lang="en" if m["idioma"].upper() == "EN" else "pt-BR",
            og_image=f"{config.SITE_URL}/{imagem}", og_url=url)
 

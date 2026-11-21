@@ -1,4 +1,19 @@
 {% extends "base.html" %}
+{% block head %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "datePublished": "{{ data }}",
+  "headline": {{ titulo|tojson }},
+  "description": {{ (descricao_meta or resumo or '')|tojson }},
+  "author": {"@type": "Person", "name": {{ autor|tojson }}},
+  "publisher": {"@type": "Organization", "name": "Alencar e Sociedade"},
+  "inLanguage": {{ idioma|lower|tojson }},
+  "mainEntityOfPage": {{ og_url|tojson }}
+}
+</script>
+{% endblock %}
 {% block content %}
 {% set en = idioma|upper == "EN" %}
 <main class="wrap wrap--article">
@@ -18,7 +33,6 @@
     <div class="article__body{% if formato == 'poema' %} texto--poema{% endif %}">
       {{ conteudo_html|safe }}
     </div>
-
 
     <section class="share" aria-label="{{ 'Share' if en else 'Compartilhar' }}" data-share
              data-url="{{ og_url|e }}" data-title="{{ titulo|e }}" data-autor="{{ autor|e }}"

@@ -1,10 +1,3 @@
-"""Páginas de listagem (seção, categoria, autor) e os dados do menu.
-
-Como o site é estático, cada filtro vira uma página gerada no build:
-    secao/<secao>.html                  todas as matérias da seção
-    secao/<secao>/<categoria>.html      uma categoria dentro da seção
-    autor/<autor>.html                  tudo de um autor (inclusive "só eu")
-"""
 import config
 from src.loader import slugificar
 from src.render import render
@@ -49,6 +42,7 @@ def gerar_listagens(materias, menu):
         render("listagem.html", destino,
                title=f"{titulo} — {config.NOME_SITE}", base_path="../" * profundidade,
                titulo_listagem=titulo, subtitulo=subtitulo, materias=lista,
+               descricao_meta=f"{titulo}: {subtitulo + ' · ' if subtitulo else ''}matérias do Alencar e Sociedade.",
                og_image=og, og_url=f"{config.SITE_URL}/{caminho}")
         criadas.append(caminho)
 
