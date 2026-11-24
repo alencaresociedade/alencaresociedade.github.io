@@ -8,7 +8,7 @@ data: 2026-11-19
 autor: "Adryan de Alencar"
 tempo_leitura: "7 min de leitura"
 resumo: "Uma leitura crítica de Democracia e Palavra, com questionamentos sobre a relação entre palavra, linguagem e ação política."
-destaque: true
+destaque: false
 ---
 
 Eu estava lendo o livro *Democracia e Palavra*, organizado por professores e pesquisadores da UFRJ, que encontrei na estante de doação do IFCS (Instituto de Filosofia e Ciências Sociais). Não pude deixar de notar pois, afinal, a temática que mais me engaja é a linguagem, e eu não poderia deixar de ler um texto que, pela capa, articularia aspectos políticos e a palavra, uma das esferas que compõem a linguagem.
