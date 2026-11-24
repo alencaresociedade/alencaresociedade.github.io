@@ -45,6 +45,5 @@ Finalizando, com as IAs apontando cada micro detalhe de furo investigativo, cada
 [^3]: PENNANEN, Niki; KANERVA, Pyry; GUCKELSBERGER, Christian. How prompting
   and editing shape psychological ownership in AI-assisted creative writing.
   OSF Preprints, versão 2, 2026. DOI: 10.31234/osf.io/vzd3w_v2.
-
   
 [^4]: A aproximação com Simmel relaciona-se somente no que tange a uma sobrecarga nervosa que leva a um embotamento, contudo, as expressões desse embotamento na minha análise trata-se particularmente da relação do indivíduo com a sua produção.
