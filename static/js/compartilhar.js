@@ -135,7 +135,6 @@
       grupo(T.formato, "formato", { story: T.story, quadrado: T.quadrado }),
       grupo(T.cor, "tema", { terracota: T.terracota, creme: T.creme, petroleo: T.petroleo }),
       el("div", { class: "cartao__acoes" }, ui.compartilhar, ui.baixar, ui.copiar)));
-  document.body.append(dlg);
 
   function atualizarAcoes() {
     const pronto = !!estado.blob;
@@ -175,6 +174,7 @@
     ui.titulo.textContent = tipo === "trecho" ? T.trecho : T.materia;
     ui.aviso.hidden = !longo;
     canvas.setAttribute("aria-label", estado.texto);
+    if (!dlg.isConnected) document.body.append(dlg); // só entra no DOM ao abrir (evita indexar os rótulos)
     if (!dlg.open) dlg.showModal();
     renderizar();
   }
