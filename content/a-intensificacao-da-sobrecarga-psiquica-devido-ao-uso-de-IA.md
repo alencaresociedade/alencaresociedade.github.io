@@ -7,7 +7,7 @@ palavras_chave: ["Georg Simmel", "Inteligência Artificial", "sobrecarga nervosa
 data: 2026-11-23
 autor: "Adryan de Alencar"
 tempo_leitura: "7 min de leitura"
-resumo: "Uma reflexão acerca da dificuldade psíquica de recomeçar os seus projetos; Uma análise a partir de Minecraft."
+resumo: "Simmel e a sobrecarga nervosa no uso de inteligências artificiais: uma análise a partir de Minecraft e da dificuldade de recomeçar projetos."
 destaque: true
 ---
 
