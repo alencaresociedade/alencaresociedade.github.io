@@ -76,7 +76,7 @@ body {
 
 .nav {
   display: flex;
-  gap: 24px;
+  align-items: center;
   flex-wrap: wrap;
 }
 
@@ -668,29 +668,17 @@ a.tag--category:hover { background: var(--petrol); color: var(--cream); }
   .site-header__inner { justify-content: flex-start; gap: 16px; }
 }
 
-/* ---------- Navegação do header em caixinhas ---------- */
+/* ---------- Navegação do header: links separados por traços ---------- */
 
-/* O .nav ocupa a segunda linha inteira; cada caixinha cresce para preencher a largura. */
-.nav {
-  flex: 1 1 100%;
-  gap: 10px;
-}
-
-.nav a {
-  flex: 1 1 auto;
-  text-align: center;
-  white-space: nowrap;
-  border: 1px solid var(--cream);
-  border-radius: 3px;
-  padding: 8px 16px;
-  line-height: 1.2;
-  transition: background 0.15s, color 0.15s;
-}
-
-.nav a:hover {
-  background: var(--cream);
-  color: var(--terracotta);
-  text-decoration: none;
+.nav a + a::before {
+  content: "";
+  display: inline-block;
+  width: 1px;
+  height: 0.9em;
+  margin: 0 12px;
+  vertical-align: middle;
+  background: currentColor;
+  opacity: 0.6;
 }
 
 /* ---------- Compartilhar ---------- */
